@@ -25,9 +25,9 @@
 	</scm>
 	<distributionManagement>
 		<repository>
-			<id>archiva.default</id>
+			<id>archiva.internal</id>
 			<name>Archiva Release</name>
-			<url>http://18.195.50.248:8080/repository/release/</url>
+			<url>http://18.195.50.248:8080/repository/internal</url>
 		</repository>
 		<snapshotRepository>
 			<id>archiva.snapshots</id>
