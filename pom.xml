@@ -19,8 +19,8 @@
 	</properties>
 
 	<scm>
-		<connection>scm:git: https://github.com/filosofisto/jenkins-spring1.git</connection>
-		<developerConnection>scm:git: https://github.com/filosofisto/jenkins-spring1.git</developerConnection>
+		<connection>scm:git:https://github.com/filosofisto/jenkins-spring1.git</connection>
+		<developerConnection>scm:git:https://github.com/filosofisto/jenkins-spring1.git</developerConnection>
 		<url> https://github.com/filosofisto/jenkins-spring1</url>
 	</scm>
 	<distributionManagement>
