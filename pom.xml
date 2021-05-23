@@ -18,6 +18,24 @@
 		<java.version>1.8</java.version>
 	</properties>
 
+	<scm>
+		<connection>scm:git: https://github.com/filosofisto/jenkins-spring1</connection>
+		<developerConnection>scm:git: https://github.com/filosofisto/jenkins-spring1</developerConnection>
+		<url> https://github.com/filosofisto/jenkins-spring1</url>
+	</scm>
+	<distributionManagement>
+		<repository>
+			<id>archiva.default</id>
+			<name>Archiva Release</name>
+			<url>http://18.195.50.248:8080/repository/release/</url>
+		</repository>
+		<snapshotRepository>
+			<id>archiva.snapshots</id>
+			<name>Archiva Snapshots</name>
+			<url>http://18.195.50.248:8080/repository/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -38,12 +56,14 @@
 	</dependencies>
 
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 
 </project>
