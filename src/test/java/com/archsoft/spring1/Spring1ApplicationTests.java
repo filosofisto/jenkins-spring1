@@ -9,7 +9,7 @@ class Spring1ApplicationTests {
 
 	@Test
 	void contextLoads() {
-		Assertions.fail("I want see red ball on Jenkins");
+//		Assertions.fail("I want see red ball on Jenkins");
 	}
 
 }
