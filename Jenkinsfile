@@ -6,7 +6,7 @@ pipeline {
     }
     stages {
         stage('Source') {
-            checkout('https://github.com/filosofisto/jenkins-spring1')
+            git url: 'https://github.com/filosofisto/jenkins-spring1'
         }
         stage('Build') {
             steps {
