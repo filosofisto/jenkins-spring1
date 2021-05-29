@@ -6,11 +6,14 @@ pipeline {
     }
     stages {
         stage('Source') {
-            git url: 'https://github.com/filosofisto/jenkins-spring1'
+            checkout('https://github.com/filosofisto/jenkins-spring1')
         }
         stage('Build') {
             steps {
-                sh 'mvn -B clean package'
+                withMaven(maven: 'Maven') {
+                    sh 'mvn clean package'
+                }
+                //sh 'mvn -B clean package'
             }
         }
     }
