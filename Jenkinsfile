@@ -5,13 +5,22 @@ pipeline {
         jdk 'JDK'
     }
     stages {
-//         stage('Source') {
-//             git url: 'https://github.com/filosofisto/jenkins-spring1'
-//         }
+        stage('Initialization') {
+            sh '''
+                echo 'Pipeline starting'
+                echo 'Do here other initializations'
+            '''
+        }
         stage('Build') {
             steps {
                 sh 'mvn -B clean package'
             }
+        }
+        stage('Termination') {
+            sh '''
+                echo 'Pipeline finished'
+                echo 'Enjoy result'
+            '''
         }
     }
 }
