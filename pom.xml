@@ -36,6 +36,14 @@
         </snapshotRepository>
     </distributionManagement>
 
+    <developers>
+        <developer>
+            <id>eduardo</id>
+            <name>Eduardo Ribeiro da Silva</name>
+            <url>https://github.com/filosofisto</url>
+            <email>filosofisto@gmail.com</email>
+        </developer>
+    </developers>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
