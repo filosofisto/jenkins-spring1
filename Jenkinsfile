@@ -8,27 +8,22 @@ pipeline {
         stage('Initialization') {
             steps {
                 sh '''
-                    echo 'Pipeline starting'
-                    echo 'Do here other initializations'
-                    echo 'Jenkinsfile updated'
+                    echo 'Release pipeline starting'
                 '''
             }
         }
         stage('Build') {
             steps {
-                sh 'mvn -B clean package'
+                sh 'mvn -B -Dmaven.test.skip=true clean package'
             }
         }
         stage('Termination') {
             steps {
                 sh '''
-                    echo 'Pipeline finished'
-                    echo 'Enjoy result'
-                    echo 'Thanks'
+                    echo 'Release pipeline finished'
                 '''
             }
         }
     }
 }
 
-// /opt/maven/apache-maven-3.8.1/bin/
