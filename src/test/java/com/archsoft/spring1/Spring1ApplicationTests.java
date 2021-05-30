@@ -10,7 +10,7 @@ class Spring1ApplicationTests {
 
 	@Test
 	void contextLoads() {
-//		fail("I want see red ball on Jenkins");
+		fail("I want see red ball on Jenkins");
 	}
 
 }
