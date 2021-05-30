@@ -8,9 +8,7 @@ pipeline {
         stage('Initialization') {
             steps {
                 sh '''
-                    echo 'Pipeline starting'
-                    echo 'Do here other initializations'
-                    echo 'Jenkinsfile updated'
+                    echo 'Develop pipeline starting'
                 '''
             }
         }
@@ -22,13 +20,10 @@ pipeline {
         stage('Termination') {
             steps {
                 sh '''
-                    echo 'Pipeline finished'
-                    echo 'Enjoy result'
-                    echo 'Thanks'
+                    echo 'Develop pipeline finished'
                 '''
             }
         }
     }
 }
 
-// /opt/maven/apache-maven-3.8.1/bin/
