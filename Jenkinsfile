@@ -23,6 +23,7 @@ pipeline {
                 sh '''
                     echo 'Pipeline finished'
                     echo 'Enjoy result'
+                    echo 'Thanks'
                 '''
             }
         }
