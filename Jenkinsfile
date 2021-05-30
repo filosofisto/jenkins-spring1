@@ -10,6 +10,7 @@ pipeline {
                 sh '''
                     echo 'Pipeline starting'
                     echo 'Do here other initializations'
+                    echo 'Jenkinsfile updated'
                 '''
             }
         }
