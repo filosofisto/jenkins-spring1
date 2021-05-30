@@ -6,10 +6,12 @@ pipeline {
     }
     stages {
         stage('Initialization') {
-            sh '''
-                echo 'Pipeline starting'
-                echo 'Do here other initializations'
-            '''
+            steps {
+                sh '''
+                    echo 'Pipeline starting'
+                    echo 'Do here other initializations'
+                '''
+            }
         }
         stage('Build') {
             steps {
@@ -17,10 +19,12 @@ pipeline {
             }
         }
         stage('Termination') {
-            sh '''
-                echo 'Pipeline finished'
-                echo 'Enjoy result'
-            '''
+            steps {
+                sh '''
+                    echo 'Pipeline finished'
+                    echo 'Enjoy result'
+                '''
+            }
         }
     }
 }
