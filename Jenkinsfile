@@ -8,7 +8,7 @@ pipeline {
         stage('Initialization') {
             steps {
                 sh '''
-                    echo 'Develop pipeline starting'
+                    echo 'Pipeline starting'
                 '''
             }
         }
@@ -20,7 +20,7 @@ pipeline {
         stage('Termination') {
             steps {
                 sh '''
-                    echo 'Develop pipeline finished'
+                    echo 'Pipeline finished'
                 '''
             }
         }
