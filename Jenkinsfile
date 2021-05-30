@@ -8,19 +8,19 @@ pipeline {
         stage('Initialization') {
             steps {
                 sh '''
-                    echo 'Develop pipeline starting'
+                    echo 'Release pipeline starting'
                 '''
             }
         }
         stage('Build') {
             steps {
-                sh 'mvn -B clean package'
+                sh 'mvn -B -Dmaven.test.skip=true clean package'
             }
         }
         stage('Termination') {
             steps {
                 sh '''
-                    echo 'Develop pipeline finished'
+                    echo 'Release pipeline finished'
                 '''
             }
         }
