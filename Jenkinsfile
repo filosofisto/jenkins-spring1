@@ -17,6 +17,11 @@ pipeline {
                 sh 'mvn -B clean package'
             }
         }
+        stage('Deploy') {
+            steps {
+                sh 'mvn deploy'
+            }
+        }
         stage('Termination') {
             steps {
                 sh '''
