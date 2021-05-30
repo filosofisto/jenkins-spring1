@@ -10,6 +10,6 @@ public class APIController {
 
     @GetMapping("/greeting")
     public String greeting() {
-        return "Hello world (API)";
+        return "Hello world (API) from develop branch";
     }
 }
