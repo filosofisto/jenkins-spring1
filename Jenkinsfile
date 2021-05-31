@@ -16,7 +16,7 @@ pipeline {
             steps {
                 sh 'mvn -B clean package'
 
-                sh 'sh "${tool("Sonar")}/bin/sonar-scanner \
+                sh 'sh ${tool("Sonar")}/bin/sonar-scanner \
                     -Dsonar.projectKey=jenkins-spring1 \
                     -Dsonar.sources=./src/main/java \
                     -Dsonar.host.url=http://3.121.215.50:9000 \
