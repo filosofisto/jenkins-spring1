@@ -16,7 +16,7 @@ pipeline {
             steps {
 //                 sh 'mvn -B clean package'
 
-                sh 'echo ${tool("Sonar")'
+                sh 'echo ${tool("Sonar")}'
 //                 sh 'sh ${tool("Sonar")}/bin/sonar-scanner \
 //                     -Dsonar.projectKey=jenkins-spring1 \
 //                     -Dsonar.sources=./src/main/java \
