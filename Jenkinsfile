@@ -3,7 +3,7 @@ pipeline {
     tools {
         maven 'Maven'
         jdk 'JDK'
-        sonarScanner 'SonarScanner'
+        hudson.plugins.sonar.SonarRunnerInstallation 'SonarScanner'
     }
     stages {
         stage('Initialization') {
@@ -17,7 +17,7 @@ pipeline {
             steps {
 //                 sh 'mvn -B clean package'
 
-                   sh 'echo ${sonarScanner}'
+                   sh 'echo ${hudson.plugins.sonar.SonarRunnerInstallation}'
 //                 sh '/var/lib/jenkins/sonarqube-scanner/sonar-scanner-4.6.2.2472/bin/sonar-scanner'
 //                 sh 'sh ${tool("Sonar")}/bin/sonar-scanner \
 //                     -Dsonar.projectKey=jenkins-spring1 \
