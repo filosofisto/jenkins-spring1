@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn -B clean package'
+                sh 'mvn -B clean package -DskipTests'
 
                 sh '/var/lib/jenkins/sonarqube-scanner/sonar-scanner-4.6.2.2472/bin/sonar-scanner \
                     -Dsonar.projectKey=jenkins-spring1 \
